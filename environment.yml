@@ -1,5 +1,0 @@
-dependencies:
-  - pandas 
-  - matplotlib 
-  - scikit-learn
-  - umap
