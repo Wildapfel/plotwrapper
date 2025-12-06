@@ -1,22 +1,14 @@
-from ..data_viz.dim_red import DimensionaltyReductionPlots
+from ..plots.dimensionality_reduction import DimensionaltyReductionPlots
+from ..plots.base import BasePlots
 
-# from matplotlib.axes import Axes
-# from matplotlib.figure import Figure
-
-import matplotlib.pyplot as plt
+import matplotlib.axes as Axes
 
 
-class AxisWrapper(DimensionaltyReductionPlots):
+
+class AxisWrapper(BasePlots, DimensionaltyReductionPlots):
 
 
-    def __init__(self, ax : plt.Axes ):
+    def __init__(self, ax : Axes ):
 
         self._ax = ax
 
-
-    def plot(self):
-        plot = self._ax.plot([1,2,3])
-        
-
-    def foo():
-        print("hello")
