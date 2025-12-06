@@ -1,17 +1,24 @@
-Usage:
+# Usage:
+
+### Fetch
 
 ```
 git clone git@github.com:Wildapfel/plotwrapper.git
 cd plotwrapper
 ```
 
-### switch to you working conda and install few dependencies and run pip installation
-
-#### One need pip installed
-```
-conda install pip -y
-```
+### Switch to you working env and install few dependencies
 
 ```
-pip install .
+conda install -f environment.yml 
+```
+
+```
+mamba install -f environment.yml 
+```
+
+
+### Test
+```
+python -c "import plotwrapper.pyplot as plt"
 ```
