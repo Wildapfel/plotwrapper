@@ -1,0 +1,33 @@
+package:
+  name: plotwrapper
+  version: 0.1.0  # Use your actual version
+
+source:
+  path: .  # Build from the current directory
+
+build:
+  number: 0
+  script: python -m pip install . --no-deps -vv  # Uses pip to install your package
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - matplotlib
+    - numpy
+    - pandas
+    - scikit-learn
+    - umap-learn
+    # Add other runtime dependencies here
+
+test:
+  imports:
+    - plotwrapper
+    - plotwrapper.pyplot  # Test your key modules
+
+about:
+  home: https://github.com/yourusername/plotwrapper  # Optional
+  license: MIT  # Your license
+  summary: Enhanced matplotlib plotting utilities with convenience methods.
