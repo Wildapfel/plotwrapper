@@ -4,8 +4,10 @@ from ..boilerplate.remover import BoilerplateRemover
 
 class BasePlots:
 
+
     def __init__(self, ax: Axes):
         self._ax = ax
+
 
     def bar(self, xlabel = None, ylabel = None, title = None, 
             xlim = None, ylim = None, **kwargs):
@@ -24,6 +26,7 @@ class BasePlots:
             **kwargs
         )
         
+
     def hist(self, xlabel = None, ylabel = None, title = None, 
              xlim = None, ylim = None, **kwargs):
 
@@ -42,6 +45,7 @@ class BasePlots:
             **kwargs
         )
         
+
     def plot(self, x = None, y = None, xlabel = None, ylabel = None, 
              title = None, xlim = None, ylim = None, **kwargs):
 
@@ -60,6 +64,7 @@ class BasePlots:
             ylim, 
             **kwargs
         )
+
 
     def scatter(self, xlabel = None, ylabel = None, title = None, 
                 xlim = None, ylim = None, **kwargs):
